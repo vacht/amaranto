@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos | Amaranto</title>
+
+  <link rel="stylesheet" href="../css_scss/base/normalize.css">
+    <link rel="stylesheet" href="../css_scss/base/base.css">
+    <link rel="stylesheet" href="../css_scss/components_blocks/_buttons.css">
+  <link rel="stylesheet" href="/css_scss/pages/productos.css" />
+</head>
+
+<body class="products">
+
+  <!-- HEADER + MENÚ (REUTILIZADO) -->
+  <header class="site-header small-header">
+    <div class="header-bg"></div>
+
+    
+
+  <!-- Logo -->
+  <a class="brand" href="/index.html" aria-label="Ir al inicio">
+    <img src="/assets/img/logo.svg" alt="Logo Amaranto" class="brand-logo" />
+    <span class="brand-name">Amaranto</span>
+  </a>
+
+  <!-- Navegación -->
+  <nav class="main-nav" aria-label="Navegación principal">
+    <ul id="nav-list" class="nav-list">
+      <li><a href="/index.html">Inicio</a></li>
+      <li><a href="/views/pages/servicios.html">Servicios</a></li>
+      <li><a href="/productos.html" class="active">Productos</a></li>
+      <li><a href="/como-funciona.html">Cómo funciona</a></li>
+      <li><a href="/precios.html">Precios</a></li>
+      <li><a href="/contacto.html">Contacto</a></li>
+      <li><a class="btn-primary" href="/registro.html">Regístrate</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+    <div class="hero-content">
+      <h1>Productos</h1>
+      <p>Diseños que transforman momentos en recuerdos</p>
+    </div>
+  </header>
+
+  <!-- FILTROS -->
+  <section class="product-filters">
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="bodas">Bodas</button>
+    <button class="filter-btn" data-filter="cumple">Cumpleaños</button>
+    <button class="filter-btn" data-filter="bautizo">Bautizos</button>
+    <button class="filter-btn" data-filter="eventos">Eventos</button>
+  </section>
+
+  <!-- GRID DE PRODUCTOS -->
+  <section class="products-grid">
+
+    <article class="product-card" data-category="bodas">
+      <img src="/assets/img/productos/producto1.jpg" alt="Invitación boda" />
+      <h3>Invitación floral</h3>
+      <p>Diseño elegante y personalizable</p>
+    </article>
+
+    <article class="product-card" data-category="cumple">
+      <img src="/assets/img/productos/producto2.jpg" alt="Decoración cumpleaños" />
+      <h3>Kit cumpleaños</h3>
+      <p>Colores suaves y tipografía moderna</p>
+    </article>
+
+    <article class="product-card" data-category="bautizo">
+      <img src="/assets/img/productos/producto3.jpg" alt="Bautizo" />
+      <h3>Pack bautizo</h3>
+      <p>Minimal y delicado</p>
+    </article>
+
+  </section>
+<script type="module" src="/js/index.js"></script>
+</body>
+</html>

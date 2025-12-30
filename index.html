@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+    name="description"
+    content="Descripción breve de la web — cámbiala por la tuya."
+    />
+    <title>Amaranto</title>
+
+    <!-- Favicon (opcional) -->
+    <link rel="icon" href="/assets/icons/logo.jpeg" />
+
+    <!-- Estilos externos (archivo separado) -->
+    <link rel="stylesheet" href="css_scss/pages/home.css" />
+
+    <!-- SEO / Social preview (opcional, editar) -->
+    <meta property="og:title" content="Nombre de tu sitio" />
+    <meta
+    property="og:description"
+    content="Una frase que describa tu producto/servicio."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="social-preview.png" />
+</head>
+<body class="home">
+    <!-- Mensaje para usuarios sin JS -->
+    <noscript>
+    <div class="no-js-warning" role="alert">
+        Esta página funciona mejor con JavaScript habilitado.
+    </div>
+    </noscript>
+
+    <!-- Cabecera / navegación -->
+    <header class="site-header" role="banner">
+  <!-- Fondo con imagen -->
+  <div class="header-bg"></div>
+
+  <!-- Contenedor del menú -->
+  <div class="header-inner">
+    <!-- Botón de menú hamburguesa -->
+    <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+      ☰
+    </button>
+
+    <!-- Logo -->
+    <a class="brand" href="/" aria-label="Ir al inicio">
+      <img src="logo.svg" alt="Logo" class="brand-logo" />
+      <span class="brand-name">MiSitio</span>
+    </a>
+
+    <!-- Navegación -->
+    <nav class="main-nav" role="navigation" aria-label="Navegación principal">
+      <ul id="nav-list" class="nav-list">
+        <li><a href="views\pages\servicios.html">Servicios</a></li>
+        <li><a href="./views/pages/productos.html">Productos</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a class="btn-primary" href="/registro">Regístrate</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+  <!-- Texto central cabecera -->
+  <div class="hero-content">
+    <h1>Amaranto</h1>
+    <p>Haz que tu evento sea inolvidable con nuestros productos</p>
+    <a href="#servicios" class="btn-primary">Ver más</a>
+  </div>
+</header>
+
+<br>
+
+
+
+
+<!-- Carrusel ilustraciones -->
+<section id="carrusel" class="carousel-section">
+  <div class="carousel-container">
+
+    <div class="carousel-slide active">
+      <img src="/assets/img/ilustracion.jpg" alt="Decoración de bodas elegante" />
+      <div class="carousel-caption">
+        <h3>Bodas inolvidables</h3>
+        <p>Decoraciones únicas para tu día especial.</p>
+      </div>
+    </div>
+
+    <div class="carousel-slide">
+      <img src="/assets/img/ilustracion1.jpg" alt="Decoración de cumpleaños colorida" />
+      <div class="carousel-caption">
+        <h3>Cumpleaños llenos de color</h3>
+        <p>Ambientes que hacen sonreír a todos.</p>
+      </div>
+    </div>
+
+    <div class="carousel-slide">
+      <img src="/assets/img/ilustracion2.jpg" alt="Decoración de bautizos" />
+      <div class="carousel-caption">
+        <h3>Bautizos encantadores</h3>
+        <p>Cada detalle pensado con amor.</p>
+      </div>
+    </div>
+
+    <div class="carousel-slide">
+      <img src="/assets/img/ilustracion3.jpg" alt="Decoraciones para eventos empresariales" />
+      <div class="carousel-caption">
+        <h3>Eventos empresariales</h3>
+        <p>Profesionalismo y estilo en cada ocasión.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BENEFICIOS -->
+<section class="benefits-section">
+  <h2>¿Por qué elegir Amaranto?</h2>
+
+  <div class="benefits-grid">
+    <div class="benefit">
+      <h3>Diseños personalizados</h3>
+      <p>Cada proyecto se crea desde cero según tu estilo y tu historia.</p>
+    </div>
+
+    <div class="benefit">
+      <h3>Acompañamiento cercano</h3>
+      <p>Te asesoramos paso a paso para que no tengas que preocuparte por nada.</p>
+    </div>
+
+    <div class="benefit">
+      <h3>Artesanía digital</h3>
+      <p>Un equilibrio entre lo artesanal y lo digital para resultados únicos.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- SECCIÓN EDITORIAL -->
+<section class="editorial-section">
+  <div class="editorial-text">
+    <h2>Diseños que cuentan historias</h2>
+    <p>
+      En Amaranto creemos que cada evento merece una identidad propia.
+      Diseñamos piezas que reflejan emociones, momentos y personas.
+    </p>
+    <a href="#contacto" class="btn-primary">Cuéntanos tu idea</a>
+  </div>
+
+  <div class="editorial-image">
+    <img src="/assets/icons/" alt="Evento decorado por Amaranto">
+  </div>
+</section>
+
+
+
+<!-- CÓMO FUNCIONA -->
+<section id="como-funciona" class="process-section">
+  <h2>Cómo trabajamos contigo</h2>
+
+  <div class="process-steps">
+    <div class="step">
+      <span>1</span>
+      <h3>Nos cuentas tu idea</h3>
+      <p>Hablamos sobre tu evento y lo que imaginas.</p>
+    </div>
+
+    <div class="step">
+      <span>2</span>
+      <h3>Diseñamos</h3>
+      <p>Creamos propuestas visuales adaptadas a ti.</p>
+    </div>
+
+    <div class="step">
+      <span>3</span>
+      <h3>Ajustamos juntos</h3>
+      <p>Revisamos detalles hasta que todo esté perfecto.</p>
+    </div>
+
+    <div class="step">
+      <span>4</span>
+      <h3>Entregamos</h3>
+      <p>Recibes tu diseño listo para tu evento.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- TESTIMONIOS -->
+<section class="testimonials-section">
+  <h2>Lo que dicen nuestros clientes</h2>
+
+  <div class="testimonials-grid">
+    <blockquote>
+      <p>“Amaranto entendió exactamente lo que quería para mi boda.”</p>
+      <cite>— Laura G.</cite>
+    </blockquote>
+
+    <blockquote>
+      <p>“El trato fue cercano y el resultado espectacular.”</p>
+      <cite>— María P.</cite>
+    </blockquote>
+  </div>
+</section>
+
+
+
+<!-- CTA FINAL -->
+<section class="final-cta">
+  <h2>¿Listos para diseñar tu evento?</h2>
+  <a href="#contacto" class="btn-primary">Hablemos</a>
+</section>
+
+
+
+
+
+<!-- Carrusel 3D de productos favoritos -->
+<section id="favoritos" class="carousel3d-section">
+  <div class="carousel-background-overlay"></div> <!-- 🔹 Nueva capa -->
+  <h2 class="section-title">Productos más queridos</h2>
+
+  <div class="carousel-container">
+    <div class="carousel-scene">
+      <div class="carousel-ring">
+        <!-- 🔹 Agrega o quita paneles aquí -->
+        <div class="carousel-item active">
+          <div class="content-box">
+            <img src="/assets/img/producto1.jpg" alt="Producto 1" />
+            <h3>Centro de mesa</h3>
+            <p>Perfecto para eventos elegantes.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="content-box">
+            <img src="/assets/img/producto2.jpg" alt="Producto 2" />
+            <h3>Arreglo floral</h3>
+            <p>Decoración ideal para bodas.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="content-box">
+            <img src="/assets/img/producto3.jpg" alt="Producto 3" />
+            <h3>Decoración de pastel</h3>
+            <p>Toque dulce para cualquier celebración.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="content-box">
+            <img src="/assets/img/producto4.jpg" alt="Producto 4" />
+            <h3>Ramo de rosas</h3>
+            <p>Un clásico que nunca falla.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="content-box">
+            <img src="/assets/img/producto5.jpg" alt="Producto 5" />
+            <h3>Decor floral rústico</h3>
+            <p>Ideal para ambientes naturales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botones de navegación -->
+    <button class="nav-button prev">❮</button>
+    <button class="nav-button next">❯</button>
+  </div>
+
+  <!-- Botón Ver más -->
+  <div class="ver-mas-container">
+    <button class="btn-ver-mas">Ver más productos</button>
+  </div>
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="footer-content container">
+
+    <div class="footer-column">
+      <h3>Amaranto</h3>
+      <ul>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Wedding Blog</a></li>
+        <li><a href="#">Hire Range</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>More</h3>
+      <ul>
+        <li><a href="#">Inspiration Gallery</a></li>
+        <li><a href="#">Returns & Refunds</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Hiring Our Products</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column footer-badges">
+      <img src="/assets/img/logo1.png" alt="logo">
+      <img src="/assets/img/logo2.png" alt="logo">
+      <img src="/assets/img/logo3.png" alt="logo">
+    </div>
+
+    
+    <div class="footer-column footer-contact">
+      <h3>Contáctanos</h3>
+      <form action="#" method="POST">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu email" required>
+        <textarea placeholder="Tu mensaje" rows="3" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025, Amaranto. Todos los derechos reservados.</p>
+  </div>
+</footer> 
+
+
+
+    <!-- Script externo (archivo separado) -->
+    <script type = "module" src="js/index.js"></script>
+</body>
+</html>

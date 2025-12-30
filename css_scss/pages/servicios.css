@@ -1,0 +1,123 @@
+@import "../styles.css";
+
+/* ===== MENÚ SUPERIOR IZQUIERDA ===== */
+.header-inner {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 3;
+}
+
+/* Botón hamburguesa */
+.nav-toggle {
+  background: rgba(255,255,255,0.8);
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.nav-toggle:hover {
+  background: rgba(255,255,255,1);
+}
+
+/* Navegación lateral retraíble */
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 230px;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 4px 0 8px rgba(0,0,0,0.1);
+  transform: translateX(-250px);
+  transition: transform 0.3s ease;
+  z-index: 5;
+}
+
+.main-nav.active {
+  transform: translateX(0);
+}
+
+.nav-list {
+  list-style: none;
+  padding: 4rem 1.5rem;
+}
+
+.nav-list li {
+  margin-bottom: 1.5rem;
+}
+
+.nav-list a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: var(--color-primary, #e88a8a);
+}
+
+
+
+/* ===== HEADER PEQUEÑO ===== */
+.small-header {
+    height: 45vh;
+}
+
+/* ===== INTRO SERVICIOS ===== */
+.services-intro {
+    padding: 4em 2em;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* ===== BLOQUES DE SERVICIO ===== */
+.service-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+    padding: 4em 2em;
+    align-items: center;
+}
+
+.service-block.reverse {
+    direction: rtl;
+}
+
+.service-block.reverse * {
+    direction: ltr;
+}
+
+.service-text ul {
+    margin-top: 1em;
+    padding-left: 1em;
+}
+
+.service-text li {
+    margin-bottom: .5em;
+}
+
+.service-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+.service-block {
+    grid-template-columns: 1fr;
+    text-align: center;
+    }
+
+.service-block.reverse {
+    direction: ltr;
+    }
+}
