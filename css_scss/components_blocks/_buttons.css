@@ -1,0 +1,45 @@
+.btn-hero {
+    position: relative;
+    display: inline-block;
+    padding: 14px 34px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #3f3a35;
+    text-decoration: none;
+    border: 1px solid #3f3a35;
+    background-color: transparent;
+    overflow: hidden;
+    transition: color 0.35s ease, border-color 0.35s ease;
+}
+
+/* Línea decorativa */
+.btn-hero .btn-line {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    width: 0%;
+    height: 1px;
+    background-color: #3f3a35;
+    transition: width 0.35s ease, left 0.35s ease;
+}
+
+/* Hover elegante */
+.btn-hero:hover {
+    color: #ffffff;
+    border-color: #3f3a35;
+    background-color: #3f3a35;
+}
+
+/* Animación de línea */
+.btn-hero:hover .btn-line {
+    width: 70%;
+    left: 15%;
+}
+
+/* Accesibilidad */
+.btn-hero:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(63, 58, 53, 0.3);
+}

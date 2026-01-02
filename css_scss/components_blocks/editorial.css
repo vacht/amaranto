@@ -1,0 +1,54 @@
+/* ===== Sección editorial ===== */
+.editorial-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Texto */
+.editorial-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.editorial-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+/* ===== Contenedor del logo ===== */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LOGO RESPONSIVO */
+.editorial-logo {
+    max-width: 320px;     /* ⬅ ancho máximo */
+    width: 100%;
+    height: auto;         /* mantiene proporción */
+    object-fit: contain;  /* evita deformación */
+    opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+.editorial-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.editorial-logo {
+    max-width: 240px;
+    margin: 0 auto;
+}
+
+}
