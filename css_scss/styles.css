@@ -1,22 +1,15 @@
-/*Reseteo de los estilos por defecto del navegador*/
+/* BASE */
 @import "./base/normalize.css";
-/*Estilos a las etiquetas base de nuestro sitio web, body, a, etc.*/
 @import "./base/base.css";
 
-/*Elementos de configuración
-Colores
+/* HELPERS */
+@import "./helpers/helpers.css";
 
-Fuentes
-
-Reseteos que se aplican a menudo en distintos elementos, como listas o inversión de colores en el caso de tener distintos temas de color
-
-Mixins
-*/
-@import "mixins/mixins.css";
-
-/*Estilos de ayuda que se utilizan a menudo como ocultar un elemento, quitar el scroll, etc.*/
-@import "helpers/helpers.css";
-
-/*Estilos de los elementos que se repitirán en el sitio web*/
+/* COMPONENTES REUTILIZABLES */
 @import "./components_blocks/_buttons.css";
+@import "./components_blocks/menu.css"; /* 👈 MUY IMPORTANTE */
 
+/* PÁGINAS */
+@import "./pages/home.css";
+@import "./pages/servicios.css";
+@import "./pages/productos.css";
