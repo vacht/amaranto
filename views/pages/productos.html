@@ -11,37 +11,50 @@
 <body class="products">
 
   <!-- HEADER + MENÚ (REUTILIZADO) -->
-  <header class="site-header small-header">
-    <div class="header-bg"></div>
+  <header class="site-header small-header" role="banner">
+  <div class="header-bg"></div>
 
-    
+  <!-- CONTENEDOR DEL MENÚ -->
+  <div class="header-inner">
 
-  <!-- Logo -->
-  <a class="brand" href="/index.html" aria-label="Ir al inicio">
-    <img src="/assets/img/logo.svg" alt="Logo Amaranto" class="brand-logo" />
-    <span class="brand-name">Amaranto</span>
-  </a>
+    <!-- BOTÓN HAMBURGUESA -->
+    <button
+      id="nav-toggle"
+      class="nav-toggle"
+      aria-expanded="false"
+      aria-controls="nav-list"
+    >
+      ☰
+    </button>
 
-  <!-- Navegación -->
-  <nav class="main-nav" aria-label="Navegación principal">
-    <ul id="nav-list" class="nav-list">
-      <li><a href="/index.html">Inicio</a></li>
-      <li><a href="/views/pages/servicios.html">Servicios</a></li>
-      <li><a href="/productos.html" class="active">Productos</a></li>
-      <li><a href="/como-funciona.html">Cómo funciona</a></li>
-      <li><a href="/precios.html">Precios</a></li>
-      <li><a href="/contacto.html">Contacto</a></li>
-      <li><a class="btn-primary" href="/registro.html">Regístrate</a></li>
-    </ul>
-  </nav>
-</div>
+    <!-- LOGO -->
+    <a class="brand" href="/index.html" aria-label="Ir al inicio">
+      <img src="/assets/img/logo.svg" alt="Logo Amaranto" class="brand-logo" />
+      <span class="brand-name">Amaranto</span>
+    </a>
 
+    <!-- NAVEGACIÓN -->
+    <nav class="main-nav" aria-label="Navegación principal">
+      <ul id="nav-list" class="nav-list">
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/views/pages/servicios.html">Servicios</a></li>
+        <li><a href="/views/pages/productos.html" class="active">Productos</a></li>
+        <li><a href="/como-funciona.html">Cómo funciona</a></li>
+        <li><a href="/precios.html">Precios</a></li>
+        <li><a href="/contacto.html">Contacto</a></li>
+        <li><a class="btn-primary" href="/registro.html">Regístrate</a></li>
+      </ul>
+    </nav>
 
-    <div class="hero-content">
-      <h1>Productos</h1>
-      <p>Diseños que transforman momentos en recuerdos</p>
-    </div>
-  </header>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero-content">
+    <h1>Productos</h1>
+    <p>Diseños que transforman momentos en recuerdos</p>
+  </div>
+</header>
+
 
   <!-- FILTROS -->
   <section class="product-filters">
